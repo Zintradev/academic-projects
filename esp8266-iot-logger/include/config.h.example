@@ -1,0 +1,16 @@
+#ifndef CONFIG_H_EXAMPLE
+#define CONFIG_H_EXAMPLE
+
+// WiFi Credentials
+#define WIFI_SSID "YOUR_WIFI_SSID"
+#define WIFI_PASS "YOUR_WIFI_PASSWORD"
+
+// NTP Configuration
+#define NTP_SERVER "pool.ntp.org"
+#define GMT_OFFSET_SEC 7200       // GMT offset in seconds (e.g. 7200 for UTC+2)
+#define DAYLIGHT_OFFSET_SEC 0     // DST offset in seconds
+
+// Storage Settings
+#define LOG_FILE_PATH "/time_log.csv"
+
+#endif // CONFIG_H_EXAMPLE

@@ -1,0 +1,38 @@
+# Lazarus/Free Pascal Gitignore
+# Excludes compiler outputs, temporary databases, backup files, and local session details.
+
+# Compiler Outputs
+*.ppu
+*.o
+*.or
+*.rst
+*.compiled
+*.a
+*.so
+*.dll
+*.dylib
+lib/
+bin/
+
+# Lazarus Project Session (user-specific settings)
+*.lps
+*.lps.bak
+
+# Backup files
+*.bak
+*.~*
+backup/
+
+# Executables
+BasicSeriesManager.exe
+BasicSeriesManager
+tests/TestSeries.exe
+tests/TestSeries
+
+# Database Files and Temporary Copies
+series.txt
+series.dat
+temp.tmp
+copy.tmp
+test_series.dat
+test_copy.tmp

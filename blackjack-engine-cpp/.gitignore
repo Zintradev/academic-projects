@@ -1,0 +1,58 @@
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+# IDEs and Editors
+.vs/
+Debug/
+Release/
+x64/
+x86/
+ARM/
+ARM64/
+*vcxproj.user
+*.suo
+*.user
+*.db
+*.opendb
+*.sdf
+*.ipch
+*.sln.docstates
+
+# CMake build outputs
+CMakeCache.txt
+CMakeFiles/
+CMakeSettings.json
+CMakePresets.json
+CTestTestfile.cmake
+Makefile
+cmake_install.cmake
+build/
+out/
+bin/
+lib/

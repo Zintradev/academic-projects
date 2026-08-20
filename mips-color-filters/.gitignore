@@ -1,0 +1,18 @@
+# MARS / SPIM Simulator Temp Files & Settings
+*.bak
+*~
+mars.settings
+.mars
+
+# IDE / Project files
+.project
+.classpath
+.settings/
+.idea/
+.vscode/
+
+# OS specific files
+Thumbs.db
+.DS_Store
+Ehthumbs.db
+[Dd]esktop.ini

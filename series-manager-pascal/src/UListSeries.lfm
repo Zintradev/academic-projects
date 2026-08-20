@@ -1,0 +1,151 @@
+object FListSeries: TFListSeries
+  Left = 350
+  Height = 450
+  Top = 200
+  Width = 600
+  Caption = 'Series Management'
+  ClientHeight = 450
+  ClientWidth = 600
+  OnActivate = FormActivate
+  OnClose = FormClose
+  LCLVersion = '2.2.0.4'
+  object lblTitle: TLabel
+    Left = 30
+    Height = 25
+    Top = 20
+    Width = 250
+    Caption = 'Series Administration'
+    Font.Height = -18
+    Font.Style = [fsBold]
+    ParentColor = False
+  end
+  object lblName: TLabel
+    Left = 30
+    Height = 15
+    Top = 70
+    Width = 100
+    Caption = 'Name:'
+    ParentColor = False
+  end
+  object edtName: TEdit
+    Left = 140
+    Height = 23
+    Top = 67
+    Width = 200
+    TabOrder = 0
+  end
+  object lblYear: TLabel
+    Left = 30
+    Height = 15
+    Top = 110
+    Width = 100
+    Caption = 'Year:'
+    ParentColor = False
+  end
+  object edtYear: TEdit
+    Left = 140
+    Height = 23
+    Top = 107
+    Width = 200
+    TabOrder = 1
+  end
+  object lblReviews: TLabel
+    Left = 30
+    Height = 15
+    Top = 150
+    Width = 100
+    Caption = 'Reviews:'
+    ParentColor = False
+  end
+  object edtReviews: TEdit
+    Left = 140
+    Height = 23
+    Top = 147
+    Width = 200
+    TabOrder = 2
+  end
+  object lblViews: TLabel
+    Left = 30
+    Height = 15
+    Top = 190
+    Width = 100
+    Caption = 'Views:'
+    ParentColor = False
+  end
+  object edtViews: TEdit
+    Left = 140
+    Height = 23
+    Top = 187
+    Width = 200
+    TabOrder = 3
+  end
+  object btnChangeCover: TButton
+    Left = 30
+    Height = 30
+    Top = 230
+    Width = 120
+    Caption = 'Change Cover'
+    OnClick = btnChangeCoverClick
+  end
+  object imgCover: TImage
+    Left = 160
+    Height = 120
+    Top = 230
+    Width = 180
+    Stretch = True
+  end
+  object lstSeries: TListBox
+    Left = 370
+    Height = 280
+    Top = 67
+    Width = 200
+    ItemHeight = 0
+    OnClick = lstSeriesClick
+    TabOrder = 4
+  end
+  object btnPrevious: TButton
+    Left = 30
+    Height = 35
+    Top = 380
+    Width = 75
+    Caption = 'Previous'
+    OnClick = btnPreviousClick
+  end
+  object btnNext: TButton
+    Left = 115
+    Height = 35
+    Top = 380
+    Width = 75
+    Caption = 'Next'
+    OnClick = btnNextClick
+  end
+  object btnUpdate: TButton
+    Left = 200
+    Height = 35
+    Top = 380
+    Width = 85
+    Caption = 'Save Changes'
+    OnClick = btnUpdateClick
+  end
+  object btnDelete: TButton
+    Left = 295
+    Height = 35
+    Top = 380
+    Width = 85
+    Caption = 'Delete'
+    OnClick = btnDeleteClick
+  end
+  object btnBack: TButton
+    Left = 485
+    Height = 35
+    Top = 380
+    Width = 85
+    Caption = 'Back'
+    OnClick = btnBackClick
+  end
+  object dlgOpenPicture: TOpenPictureDialog
+    Filter = 'Graphics (*.png;*.jpg;*.jpeg;*.bmp)|*.png;*.jpg;*.jpeg;*.bmp'
+    Left = 400
+    Top = 380
+  end
+end

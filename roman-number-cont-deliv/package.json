@@ -1,0 +1,15 @@
+{
+  "name": "roman-number-cont-deliv",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "lint": "eslint src/js",
+    "test": "mocha-headless-chrome -f tests/test.html --args no-sandbox",
+    "build": "shx rm -rf dist && shx mkdir dist && shx cp -r src/css src/js src/index.html dist/"
+  },
+  "devDependencies": {
+    "eslint": "^8.0.0",
+    "mocha-headless-chrome": "^4.0.0",
+    "shx": "^0.3.4"
+  }
+}

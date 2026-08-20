@@ -1,0 +1,45 @@
+object FMainMenu: TFMainMenu
+  Left = 350
+  Height = 400
+  Top = 250
+  Width = 500
+  Caption = 'TV Series Manager - Main Menu'
+  ClientHeight = 400
+  ClientWidth = 500
+  LCLVersion = '2.2.0.4'
+  object lblTitle: TLabel
+    Left = 100
+    Height = 30
+    Top = 40
+    Width = 300
+    Caption = 'TV Series Manager'
+    Font.Height = -20
+    Font.Name = 'Sans'
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object btnAddSeries: TButton
+    Left = 150
+    Height = 40
+    Top = 120
+    Width = 200
+    Caption = 'Add New Series'
+    OnClick = btnAddSeriesClick
+  end
+  object btnListSeries: TButton
+    Left = 150
+    Height = 40
+    Top = 180
+    Width = 200
+    Caption = 'Manage Series'
+    OnClick = btnListSeriesClick
+  end
+  object imgLogo: TImage
+    Left = 150
+    Height = 120
+    Top = 240
+    Width = 200
+    Stretch = True
+  end
+end

@@ -1,0 +1,43 @@
+# Object files
+*.o
+*.obj
+
+# Libraries
+*.lib
+*.a
+*.la
+*.lo
+
+# Shared libraries
+*.dll
+*.so
+*.so.*
+*.dylib
+
+# Executables
+*.exe
+*.out
+*.app
+dfa_validator
+test_runner
+
+# Build directories
+build/
+bin/
+
+# IDE and Project Settings
+.vscode/
+.idea/
+*.suo
+*.user
+*.userossc
+*.sln
+*.vcxproj
+*.filters
+*.make
+.directory
+
+# Temporary files
+*.swp
+*~
+.DS_Store

@@ -1,0 +1,118 @@
+object FAddSeries: TFAddSeries
+  Left = 400
+  Height = 450
+  Top = 200
+  Width = 550
+  Caption = 'Add New Series'
+  ClientHeight = 450
+  ClientWidth = 550
+  OnClose = FormClose
+  OnCreate = FormCreate
+  LCLVersion = '2.2.0.4'
+  object lblFormTitle: TLabel
+    Left = 40
+    Height = 25
+    Top = 20
+    Width = 200
+    Caption = 'Register New Series'
+    Font.Height = -18
+    Font.Style = [fsBold]
+    ParentColor = False
+  end
+  object lblName: TLabel
+    Left = 40
+    Height = 15
+    Top = 70
+    Width = 100
+    Caption = 'Name:'
+    ParentColor = False
+  end
+  object edtName: TEdit
+    Left = 150
+    Height = 23
+    Top = 67
+    Width = 200
+    TabOrder = 0
+  end
+  object lblYear: TLabel
+    Left = 40
+    Height = 15
+    Top = 110
+    Width = 100
+    Caption = 'Year:'
+    ParentColor = False
+  end
+  object edtYear: TEdit
+    Left = 150
+    Height = 23
+    Top = 107
+    Width = 200
+    TabOrder = 1
+  end
+  object lblReviews: TLabel
+    Left = 40
+    Height = 15
+    Top = 150
+    Width = 100
+    Caption = 'Reviews:'
+    ParentColor = False
+  end
+  object edtReviews: TEdit
+    Left = 150
+    Height = 23
+    Top = 147
+    Width = 200
+    TabOrder = 2
+  end
+  object lblViews: TLabel
+    Left = 40
+    Height = 15
+    Top = 190
+    Width = 100
+    Caption = 'Views:'
+    ParentColor = False
+  end
+  object edtViews: TEdit
+    Left = 150
+    Height = 23
+    Top = 187
+    Width = 200
+    TabOrder = 3
+  end
+  object btnSelectCover: TButton
+    Left = 40
+    Height = 30
+    Top = 240
+    Width = 120
+    Caption = 'Select Cover'
+    OnClick = btnSelectCoverClick
+  end
+  object imgCover: TImage
+    Left = 180
+    Height = 120
+    Top = 240
+    Width = 170
+    Stretch = True
+  end
+  object btnSave: TButton
+    Left = 40
+    Height = 35
+    Top = 380
+    Width = 120
+    Caption = 'Save'
+    OnClick = btnSaveClick
+  end
+  object btnBack: TButton
+    Left = 180
+    Height = 35
+    Top = 380
+    Width = 120
+    Caption = 'Back'
+    OnClick = btnBackClick
+  end
+  object dlgOpenPicture: TOpenPictureDialog
+    Filter = 'Graphics (*.png;*.jpg;*.jpeg;*.bmp)|*.png;*.jpg;*.jpeg;*.bmp'
+    Left = 400
+    Top = 70
+  end
+end
