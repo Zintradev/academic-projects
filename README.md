@@ -26,6 +26,3 @@ A collection of low-level systems programming, algorithms, hardware architecture
 * **Theoretical Computer Science:** Formal grammars, state-machine validation (DFA), and algorithm complexity optimization.
 * **Data Structures & Memory Management:** Custom hash tables, dynamic allocation, pointer operations, and manual heap lifecycle control.
 * **Database Systems & Delivery:** Relational database design, relational integrity constraints, and automated CI/CD pipeline automation via GitHub Actions.
-    # Example: Executing a C++ engine
-    g++ -std=c++17 -O2 ./blackjack-engine-cpp/*.cpp -o blackjack_engine
-    ./blackjack_engine
