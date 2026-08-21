@@ -4,12 +4,12 @@ on:
   push:
     branches: ["main", "master"]
     paths:
-      - 'roman-number-cont-deliv/**' 
+      - 'roman-number-cont-deliv/**'
   pull_request:
     types: [opened, reopened]
     branches: ["main", "master"]
     paths:
-      - 'roman-number-cont-deliv/**' 
+      - 'roman-number-cont-deliv/**'
     
 permissions:
   contents: read
@@ -21,13 +21,13 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: ./roman-number-cont-deliv 
+        working-directory: ./roman-number-cont-deliv
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: Set-up Node
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
-          node-version: 20.x
+          node-version: 24.x
       - name: Install Dependencies
         run: npm install
       - name: Lint
@@ -40,11 +40,11 @@ jobs:
       run:
         working-directory: ./roman-number-cont-deliv
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: Set-up Node
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
-          node-version: 20.x
+          node-version: 24.x
       - name: Install Dependencies
         run: npm install
       - name: Test
@@ -58,11 +58,11 @@ jobs:
         working-directory: ./roman-number-cont-deliv
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: Set-up Node
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
-          node-version: 20.x
+          node-version: 24.x
       - name: Install Dependencies
         run: npm install
       - name: Build
@@ -70,7 +70,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './roman-number-cont-deliv/dist' 
+          path: './roman-number-cont-deliv/dist'
 
   deploy:
     environment:
