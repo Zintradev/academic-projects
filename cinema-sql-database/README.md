@@ -85,40 +85,40 @@ erDiagram
     screens ||--o{ employee_screens : "supervised by"
 
     customers {
-        int customer_id PK, AUTO_INCREMENT
+        int customer_id PK "AUTO_INCREMENT"
         string first_name
         string last_name
-        string email UNIQUE
+        string email UK "UNIQUE"
         string phone
     }
     employees {
-        int employee_id PK, AUTO_INCREMENT
+        int employee_id PK "AUTO_INCREMENT"
         string first_name
         string last_name
         decimal salary
         string role
     }
     screens {
-        int screen_id PK, AUTO_INCREMENT
+        int screen_id PK "AUTO_INCREMENT"
         int capacity
         enum type
     }
     movies {
-        int movie_id PK, AUTO_INCREMENT
+        int movie_id PK "AUTO_INCREMENT"
         string title
         int duration
         string director
         string genre
     }
     screenings {
-        int screening_id PK, AUTO_INCREMENT
+        int screening_id PK "AUTO_INCREMENT"
         time screening_time
         date screening_date
         int movie_id FK
         int screen_id FK
     }
     tickets {
-        int ticket_id PK, AUTO_INCREMENT
+        int ticket_id PK "AUTO_INCREMENT"
         decimal price
         string seat
         int screening_id FK
