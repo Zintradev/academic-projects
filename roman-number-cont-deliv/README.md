@@ -41,7 +41,7 @@ This project demonstrates several advanced software engineering practices and pa
 ## Compilation, Build, & Execution
 
 ### Prerequisites
-- Node.js (v18.x or v20.x recommended)
+- Node.js (v18.x or v20.x recommended) 
 - npm (Node Package Manager)
 
 ### 1. Installation
